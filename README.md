@@ -15,7 +15,7 @@ using the below cmake command the current 0.21.2 release of freecad is unable to
 and
 
 ```
-<GL/glu.h
+<GL/glu.h>
 ```
 
 ## todos
@@ -27,7 +27,7 @@ and
 
 ## working with cmake via CLI
 
-when building this project from a cli i use the below cmake command, with the idea that i am going to manually specify, the required cmake variables via the cli. my primary reason for doing this is because homebrew installs qt v5 and at qt v6 in the same install prefix thus making it next to impossible to isolate and use a specific qt installation. 
+when building this project from a cli i use the below cmake command, with the idea that i am going to manually specify, the required cmake variables via the cli. my primary reason for doing this is because homebrew installs qt v5 and qt v6 in the same install prefix thus making it next to impossible to isolate and use a specific qt installation. 
 
 ```
 export bp=$(brew --prefix)
