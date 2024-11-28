@@ -24,3 +24,6 @@ endif(NOT XercesC_FOUND)
 add_executable(hello_world_cmake src/hello.cpp)
 
 target_link_libraries(hello_world_cmake PRIVATE XercesC::XercesC)
+
+install(TARGETS hello_world_cmake
+  RUNTIME DESTINATION bin)
