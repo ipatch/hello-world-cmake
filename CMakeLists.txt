@@ -11,8 +11,10 @@ if(HOMEBREW_PREFIX)
   include_directories(${XercesC_INCLUDE_DIR})
 
   # Display information about Xerces-C++ found by CMake
+  message(STATUS "ipatch -------------------------------------------------")
   message(STATUS "Xerces-C++ include directory: ${XercesC_INCLUDE_DIR}")
   message(STATUS "Xerces-C++ library: ${XercesC_LIBRARY}")
+  message(STATUS "ipatch -------------------------------------------------")
 endif()
 
 if(NOT XercesC_FOUND)
